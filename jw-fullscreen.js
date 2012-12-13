@@ -1,3 +1,3 @@
-jQuery(window).load(function () {
-  fullscreen.on();
-});
+jQuery( window ).load( function () {
+	fullscreen.on();
+} );
