@@ -12,12 +12,9 @@ Version: 0.1
 Author URI: http://andrewspittle.net/
 */
 
-function jw_enqueue($hook) {
-    if( 'post-new.php' != $hook )
+function jw_enqueue( $hook ) {
+    if ( 'post-new.php' != $hook )
         return;
-    wp_enqueue_script( 'jw_fullscreen', plugins_url('/jw-fullscreen.js', __FILE__) );
+    wp_enqueue_script( 'jw_fullscreen', plugins_url( '/jw-fullscreen.js', __FILE__ ) );
 }
 add_action( 'admin_enqueue_scripts', 'jw_enqueue' );
-
-
-?>
